@@ -30,7 +30,7 @@
                 "apps": [],
                 "libs": []
             },
-            "other": [
+            "others": [
                 {
                     "xUnitFor1C": {
                         "type": "git",
