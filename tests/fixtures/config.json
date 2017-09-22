@@ -1,0 +1,50 @@
+{
+    "environments": [
+        {
+            "oscript-only": {
+                "oscript": {
+                    "version": "1.0.17",
+                    "apps": [],
+                    "libs": []
+                }
+            }
+        },
+        {
+            "sync": {
+                "oscript": {
+                    "version": "1.0.17",
+                    "apps": [
+                        {
+                            "gitsync": {
+                                "entrypoints": [
+                                    {
+                                        "gitsync": "lib/gitsync/src/gitsync.os"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "libs": []
+                }
+            }
+        },
+        {
+            "test": {
+                "oscript": {
+                    "version": "1.0.17",
+                    "apps": [],
+                    "libs": []
+                },
+                "other": [
+                    {
+                        "xUnitFor1C": {
+                            "type": "git",
+                            "repo": "https://github.com/xDrivenDevelopment/xUnitFor1C.git",
+                            "tag": "4.2.0.0"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
