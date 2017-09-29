@@ -11,34 +11,25 @@
             "oscript": {
                 "version": "1.0.17",
                 "apps": [
-                    {
-                        "gitsync": {
-                            "entrypoints": [
-                                {
-                                    "gitsync": "lib/gitsync/src/gitsync.os"
-                                }
-                            ]
-                        }
-                    }
+                    "gitsync"
                 ],
-                "libs": []
+                "libs": [
+                    "cmdline"
+                ]
             }
         },
-        "test": {
+        "tests": {
             "oscript": {
                 "version": "1.0.17",
-                "apps": [],
                 "libs": []
             },
-            "others": [
-                {
-                    "xUnitFor1C": {
-                        "type": "git",
-                        "repo": "https://github.com/xDrivenDevelopment/xUnitFor1C.git",
-                        "tag": "4.2.0.0"
-                    }
+            "others": {
+                "xUnitFor1C": {
+                    "type": "git",
+                    "repo": "https:\/\/github.com\/xDrivenDevelopment\/xUnitFor1C.git",
+                    "branch": "tags\/4.2.0.0"
                 }
-            ]
+            }
         }
     }
 }
